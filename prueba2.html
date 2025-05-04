@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Prueba 2</h1>
+        <p>¿Puedo combinar una Gymkana y un Escape room?</p>
+        <input type="text" id="answer" maxlength="3">
+        <button onclick="checkAnswer()">Verificar respuesta</button>
+    </div>
+
+    <!-- Pop-up de éxito -->
+    <div id="successPopup" class="popup">
+        <div class="popup-content">
+            <h2>¡Enhorabuena!</h2>
+            <p>Has logrado superar la actividad.</p>
+        </div>
+    </div>
+
+    <!-- Pop-up de error -->
+    <div id="errorPopup" class="popup">
+        <div class="popup-content">
+            <h2>¡Vuelve a intentarlo!</h2>
+            <button onclick="closeErrorPopup()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="prueba2.js"></script>
+</body>
+</html>
