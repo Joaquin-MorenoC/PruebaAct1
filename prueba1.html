@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Prueba 1</h1>
+        <p>
+            Un escape room es un juego de aventura físico o virtual en el que un grupo de personas queda "encerrado" en una habitación temática y debe resolver una serie de <input type="text" id="blank1" maxlength="10">, rompecabezas y desafíos para poder " <input type="text" id="blank2" maxlength="10">" antes de que se agote un <input type="text" id="blank3" maxlength="10"> límite;
+        </p>
+        <button onclick="checkAnswers()">Verificar respuestas</button>
+    </div>
+
+    <!-- Pop-up de éxito -->
+    <div id="successPopup" class="popup">
+        <div class="popup-content">
+            <h2>¡Enhorabuena!</h2>
+            <p>Pasas a la siguiente prueba.</p>
+            <button onclick="window.location.href = 'prueba2.html';">Siguiente prueba</button>
+        </div>
+    </div>
+
+    <!-- Pop-up de error -->
+    <div id="errorPopup" class="popup">
+        <div class="popup-content">
+            <h2>¡Vuelve a intentarlo!</h2>
+            <p>Debes acertar todas para pasar a la siguiente prueba.</p>
+            <button onclick="closeErrorPopup()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
